@@ -21,6 +21,10 @@ public class CurrencyReward extends RewardAttribute {
     }
 
 
+    public void setAmount(int amount) {
+        this.amount = amount;
+    }
+
     @Override
     public void execute(Player player) {
         final String uuid = player.getUniqueId().toString();

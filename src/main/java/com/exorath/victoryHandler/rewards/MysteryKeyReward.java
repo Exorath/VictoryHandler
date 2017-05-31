@@ -23,6 +23,10 @@ public class MysteryKeyReward extends RewardAttribute {
     }
 
 
+    public void setKeys(int keys) {
+        this.keys = keys;
+    }
+
     private ChatColor getCurrencyColor(){
         return ChatColor.GREEN;
     }

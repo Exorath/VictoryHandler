@@ -41,6 +41,10 @@ public class VictoryPlayer {
     }
 
 
+    public List<RewardAttribute> getRewards() {
+        return rewards;
+    }
+
     public void handleRewards() {
         player.sendMessage(ChatColor.BOLD + "================================================");
         player.sendMessage(getRanking() + ChatColor.WHITE + ChatColor.BOLD + " Position Rewards");
