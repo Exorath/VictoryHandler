@@ -16,6 +16,10 @@ public abstract class RewardAttribute {
         return reason;
     }
 
+    public void setReason(String reason) {
+        this.reason = reason;
+    }
+
     public abstract void execute(Player player);
 
     public abstract String getMessage();
