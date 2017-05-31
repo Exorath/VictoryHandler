@@ -10,7 +10,9 @@ import org.bukkit.entity.Player;
  */
 public class CurrencyReward extends RewardAttribute {
     private CurrencyServiceAPI currencyServiceAPI;
+    private ChatColor currencyColor = ChatColor.GREEN;
     private String currencyId;
+    private String currencyName;
     private int amount;
 
     public CurrencyReward(String reason, CurrencyServiceAPI currencyServiceAPI, String currencyId, int amount) {
@@ -37,10 +39,18 @@ public class CurrencyReward extends RewardAttribute {
     }
 
     private ChatColor getCurrencyColor(){
-        return ChatColor.GREEN;
+        return currencyColor;
+    }
+
+    public void setCurrencyColor(ChatColor currencyColor) {
+        this.currencyColor = currencyColor;
     }
 
     private String getCurrencyName(){
-        return currencyId;
+        return currencyName == null ? currencyId : currencyName;
+    }
+
+    public void setCurrencyName(String currencyName) {
+        this.currencyName = currencyName;
     }
 }
