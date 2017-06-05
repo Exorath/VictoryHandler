@@ -62,4 +62,12 @@ public class VictoryPlayer {
         } else
             return ChatColor.GOLD + ChatColor.BOLD.toString() + position + "th";
     }
+
+    public Integer getPosition() {
+        return position;
+    }
+
+    public Boolean isTeam() {
+        return team;
+    }
 }
