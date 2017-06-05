@@ -46,11 +46,11 @@ public class VictoryPlayer {
     }
 
     public void handleRewards() {
-        player.sendMessage(ChatColor.BOLD + "================================================");
+        player.sendMessage(ChatColor.BOLD + "=============================================");
         player.sendMessage(getRanking() + ChatColor.WHITE + ChatColor.BOLD + " Position Rewards");
         player.sendMessage("");
         rewards.forEach(attribute -> player.sendMessage(attribute.getMessage()));
-        player.sendMessage(ChatColor.BOLD + "================================================");
+        player.sendMessage(ChatColor.BOLD + "=============================================");
         rewards.forEach(reward -> reward.execute(player));
     }
 
