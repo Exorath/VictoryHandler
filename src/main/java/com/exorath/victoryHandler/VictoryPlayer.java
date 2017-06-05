@@ -57,7 +57,7 @@ public class VictoryPlayer {
     private String getRanking() {
         if (position == 1) {
             return ChatColor.AQUA + ChatColor.BOLD.toString() + "1st";
-        } else if (position == 2 && position == 3) {
+        } else if (position == 2 || position == 3) {
             return ChatColor.GRAY + ChatColor.BOLD.toString() + position + "nd";
         } else
             return ChatColor.GOLD + ChatColor.BOLD.toString() + position + "th";
